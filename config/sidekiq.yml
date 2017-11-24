@@ -1,0 +1,6 @@
+:concurrency: 1
+
+:schedule:
+  hello_world_00:
+    cron: '0 * * * * *'   # Runs once per minute, sec = 00
+    class: HelloWorld

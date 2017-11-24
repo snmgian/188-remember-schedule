@@ -1,0 +1,4 @@
+---
+hello_world_00:
+  cron: "*/20 * * * * *"
+  class: HelloWorld

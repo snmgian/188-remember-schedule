@@ -1,0 +1,40 @@
+PATH
+  remote: ../../sidekiq-scheduler
+  specs:
+    sidekiq-scheduler (2.1.9)
+      redis (~> 3)
+      rufus-scheduler (~> 3.2)
+      sidekiq (>= 3)
+      tilt (>= 1.4.0)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    concurrent-ruby (1.0.5)
+    connection_pool (2.2.1)
+    et-orbi (1.0.5)
+      tzinfo
+    rack (2.0.3)
+    rack-protection (2.0.0)
+      rack
+    redis (3.3.3)
+    rufus-scheduler (3.4.2)
+      et-orbi (~> 1.0)
+    sidekiq (5.0.4)
+      concurrent-ruby (~> 1.0)
+      connection_pool (~> 2.2, >= 2.2.0)
+      rack-protection (>= 1.5.0)
+      redis (~> 3.3, >= 3.3.3)
+    thread_safe (0.3.6)
+    tilt (2.0.8)
+    tzinfo (1.2.3)
+      thread_safe (~> 0.1)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  sidekiq-scheduler!
+
+BUNDLED WITH
+   1.15.0
