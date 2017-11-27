@@ -2,5 +2,22 @@
 
 :schedule:
   hello_world_00:
-    cron: '0 * * * * *'   # Runs once per minute, sec = 00
+    cron: '*/30 * * * * *'   # Runs once per minute, sec = 00
     class: HelloWorld
+    args: ['Alice']
+    include_metadata: true
+  hello_world_01:
+    every: ['1m', first_in: '120s', smth: true]
+    class: HelloWorld
+    args: ['Bob']
+  hello_world_02:
+    in: '3m'
+    class: HelloWorld
+    args: ['Kate']
+  hello_world_03:
+    at: '2017-11-27 13:12:13'
+    class: HelloWorld
+    args: ['Ann']
+
+
+
